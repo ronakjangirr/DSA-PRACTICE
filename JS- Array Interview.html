@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Task-4</title>
+
+	<style>
+	body{
+	padding:0;
+	margin:0;
+	}
+	
+
+	</style>
+	</head>
+	<body>
+		<script>
+//	1. concat() - The concat() method concatenates (joins) two or more arrays:
+		let a=[1,2,3,4,5,6];
+		let b=[7,8,9,10];
+		let c=[11,12,13,14,15];
+		let x=a.concat(b,c);
+		document.write(x);
+		
+		document.write("<br>");
+//Result- 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+
+//  2. Change array value or replace array index value-
+		let aa=[1,2,3,4,5];
+		
+		aa[3]="hello"
+		document.write(aa);
+			
+		document.write("<br>");
+//Result- 1,2,3,hello,5
+
+//	3. Delete array value or delete array index value-
+
+		let bb=[1,2,3,4,5];
+		delete bb[3];
+		document.write(bb);
+//Result- 1,2,3,,5 		
+
+		document.write("<br>");
+
+// 	4. sort()- The sort() sorts the elements as strings in alphabetical and ascending order.
+
+	let cc=["Chaman","Aman","Raman","Baban",];
+	cc.sort();
+	document.write(cc)
+	
+
+//Result- Aman,Baban,Chaman,Raman 
+
+	document.write("<br>");
+
+//	5. reverse() - Reverse method used to reverse the array element.
+
+	let dd=["Chaman","Aman","Raman","Baban"];
+	dd.reverse();
+	document.write(dd);
+	
+//Result- Baban,Raman,Aman,Chaman	 
+	
+	document.write("<br>");
+
+//	6. pop()- pop method deletes the only last value or element of the array.
+
+	let ee=["A","B","C","D","E"];
+		ee.pop()
+		document.write(ee);
+
+//Result- A,B,C,D 		
+
+	document.write("<br>");
+
+//	7. push()- push method add value or element only at the last position of the array.
+	
+	let ff=["A","B","C","D","E"];
+	ff.push("Helloji");
+	
+	document.write(ff);
+	
+// Result- A,B,C,D,E,Helloji 	
+
+	document.write("<br>");
+
+//	8. shift() - shift method delete's only first value of the array.
+
+	let gg=["A","B","C","D",5];
+	gg.shift();
+	
+	document.write(gg);
+
+//Result- B,C,D,5
+
+	document.write("<br>");
+
+// 9. unshift()-  unshift add value at only first place of the array.
+
+	let hh=["A","B","C","D","E"];
+	hh.unshift("First");
+	
+	document.write(hh);
+	
+// Result- First,A,B,C,D,E	
+
+	document.write("<br>");
+
+//	10. join()- join method joins the array element and creates single value.
+
+	let ii=["A","B","C","D","E"];
+	let xy= ii.join(" ");
+	document.write(xy);
+
+//Result- A B C D E
+
+	document.write("<br>");
+
+	let iii=["A","B","C","D","E"];
+	let xz= iii.join("/");
+	document.write(xz);
+
+//Result- A/B/C/D/E
+	
+	document.write("<br>");
+
+//	11. slice()- it creates a new variable from by taking elements from old array.
+
+//	slice(start, End)
+	let gb=["A","B","C","D","E"];
+	let ga= gb.slice(1,4);
+	
+	document.write(ga);
+
+//Result- B,C,D 
+
+	document.write("<br>");
+
+	let tc=["A","B","C","D","E"];
+	let tb= tc.slice(2);
+	document.write(tb);
+
+//Result- C,D,E
+	document.write("<br>");
+
+//	12. splice()- This method doesn't create new array it do changes in existing array and it adds the value and also delete the value.
+//   splice(indexvalue, delete, insert your value) 
+// 	h.splice(2(at which place), 0(no delete),"First","Second"(Value inserted))
+
+	let h=["A","B","C","D","E"];
+	h.splice(2,0,"First","Second");
+	document.write(h);
+	
+//Result- A,B,First,Second,C,D,E 
+
+	document.write("<br>");
+
+	let ha=["A","B","C","D","E"];
+	ha.splice(2,2,"First","Second");
+	document.write(ha);
+
+// Result- A,B,First,Second,E
+// In this 2 value is deleted because we write 2.
+	document.write("<br>");
+
+//	13. indexOf- it searches that value is present in array or not and returns its index value from where it present.
+// indexOf("C"(Value serching),1(From which index no we wants to search))
+	let j=["A","B","C","D","E"];
+	let ja=j.indexOf("C",1);
+	
+	document.write(ja)
+	
+//Result- 2 	  	
+// 	lastIndexOf it works same as indexOf but it starts from reverse or last index.
+document.write("<br>");
+
+//	14. includes() - This Method used to search the value or element from existing array and returns True or False. Note- It matches the Exact Value.
+
+	let jj=["A","B","C","D","E"];
+	let jd=jj.includes("B");
+	document.write(jd);
+//Result- true
+
+document.write("<br>");
+
+// 15. 	find()- it returns only first value from array which passes the condition and it takes a function as a parameter.
+
+//	let ages=[1, 17,13, 23, 34];
+	
+//	let bages= ages.find(fun);
+//	document.write(bages)
+	
+//	function fun(ages){
+//		returns ages>= 18;
+//	}
+	
+document.write("<br>");
+
+// 16. map()- It returns a new array from old existing array. 
+	let kk= [1,2,3,4,5];
+	let ka =kk.map(fun);
+
+	document.write(ka);
+		
+	function fun(x){
+		return x*2;
+	}
+	
+
+// Result-2 4 6 8 10
+
+document.write("<br>");
+	
+// 17. filter()- 
+
+	let numbers=[1,2,3,4,5];
+	let fil=numbers.filter(funct);
+
+	function funct(numbers){
+		return numbers>=3;
+	}	
+
+	document.write(fil);
+//Result- 3 4 5
+
+document.write("<br>");
+
+//	18. Array destructuring- It allows us to extract data from same variable and we can reuse it.
+
+	let sub=["js", "python", "Dotnet", "Java", "Php"];
+	let [Js,Pyt,Dot,Java,Php]= sub;
+
+	document.write(Js);
+	
+// Result- js	
+// Old Method- let Js=sub[0];  or   let Pyt=sub[1]    Result- document.write(Js)   
+
+document.write("<br>");
+
+//	19. Hoisting- 
+//	var x;			--Declaration 
+//	x=1;			-- Assigning the value
+//	document.write(x)	-- Calling 
+
+//	Example 1-
+
+	document.write(ho);
+	var ho=1;
+		
+// Result- undefined	
+
+document.write("<br>");
+
+//	Example 2-
+	var haha =1;
+	document.write(haha);
+// Result- 1	
+
+document.write("<br>");
+
+//	Example 3-
+
+	host();
+	function host(){
+		document.write("Hello");
+	}
+
+// Result- Hello	
+
+//	Example 4-
+
+	function host2(){
+		document.write("Hello 2");
+	}
+
+	host2();
+
+// Result- Hello 2	
+
+document.write("<br>");
+
+//	Example 5-
+
+//	host3();
+	
+//Result- undefined
+
+document.write("<br>");
+	
+//	Example 6-
+	
+//	document.write(oop);
+//	let oop;
+//	oop=2;
+// Result- Not initilized the value	
+
+// 20. rest parameter or operator- It's a imporved way to handle to handle function parameters. Its syntax allows us to represent an indefinite number of arguments as an array.
+
+	function rt(...get){
+		document.write(get);
+	}
+	
+	rt(1,23,4,45,6,);
+	
+// Result- 1,23,4,45,6 
+
+document.write("<br>");
+	
+// Old Method-
+
+	function old(one,two){
+		document.write(one+two);
+	}	
+	old(1,2);
+
+// Result- 3	
+document.write("<br>");
+
+// Fetch ()-
+		fetch("https://swbwhw")
+		.then(response=>response.json())
+		.then(data=> console.log(data));
+
+//		Reduce method	
+		let a=[1,2,3,4,5,7];
+		let b = a.reduce(fun);
+
+		function fun(total,currentval){
+			return total+currentval;
+		}
+
+		console.log(b);
+// Result- 22		
+
+//	Spread Operator-
+		let a=[1,2,3,45,5];
+		let b=[6,7,8,9,10];
+		let c=[...a,...b]
+		console.log(c);
+
+//Result-[1, 2, 3, 45, 5, 6, 7, 8, 9, 10]
+
+//	CallBack Function -
+	function fun(a,b,call){
+	console.log(a,b)
+	call();
+}
+
+	function h(){
+		console.log("Hello");
+	}
+
+	let	a=1;
+	let b=2;
+
+	fun(a,b,h)
+// Result-	1,2   Hello
+
+	function fun(a,b,call){
+		console.log(a,b)
+		call();
+	}
+
+	function h(){
+		console.log("Hello");
+	}
+
+
+	fun(2,1,h)
+//Result-	2,1	Hello
+
+//	Global Scope-
+
+	let xy=10;
+
+	function a(){
+		var b=5;
+	  console.log(b);
+	  console.log(xy);
+	}
+	a();
+	console.log(xy)
+//Result-	5   10  10
+
+// Child to Parent in react
+//Child Component
+	import React from "react";
+
+	function Child(p){
+		let data="Child to Parent";
+		return(
+			<>
+			<h2>What is your Name</h2>
+			<button onClick={()=>p.alert(data)}>Click Me</button>
+			</>
+		)
+	};
+
+	export default Child;
+
+// Parent Component-
+
+	import Child from "./Child.js";
+
+	function App() {
+	  function get(data){
+		alert(data)
+	  }
+	  return (
+		<div >
+		  <Child alert={get} />
+		  <h3></h3>
+		</div>
+	  );
+	}
+
+	export default App;
+
+
+		
+	</script>
+	</body>
+</html>

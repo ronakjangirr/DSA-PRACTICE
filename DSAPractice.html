@@ -1,0 +1,859 @@
+<html>
+<head>
+<title>DSA Question and Answers</title>
+</head>
+
+<body>
+
+<script>
+//    BASIC DSA QUESTIONS  
+
+// 1. Write a JS code to print numbers from 1 to 10.
+
+// function printNumbers() {
+//   for(var i=1;i<=10;i++){
+//     console.log(i);
+//   }
+// }
+
+// printNumbers() //1 2 3 4 5 6 7 8 9 10
+
+
+
+// 2. Run a loop to print a variable x value.
+
+// let x=[1,2,3,4,5,6,7,8,9,10];
+// function fun(x){
+// 	for(var i=1;i<=x.length; i++){ 			
+//  	console.log(i);
+//  }
+// }
+
+// fun(x);
+
+// Result- [1,2,3,4,5,6,7,8,9,10]
+
+
+
+// 3. Write a JS code to print Even numbers in given array
+
+// function printEven(arr) {
+//   for (var i=0;i<arr.length;i++){
+//     if(arr[i]%2==0){
+//       console.log(arr[i]); //print even number
+//     }  
+//   }
+// }
+// var arr = [13,23,12,45,22,48,66,100]
+
+// printEven(arr) //12 22 48 66 100 
+
+
+
+// 4. Write a JS code to demonstrate Async loop
+
+// for(var i=0;i<5;i++){
+//   setTimeout(()=>console.log(i), 5000);// 5 5 5 5 5
+// }
+
+
+
+// 5.  Display a Text Five Times I love JavaScript.
+
+// const n = 5;
+
+// // looping from i = 1 to 5
+// for (let i = 1; i <= n; i++) {
+//     console.log(`I love JavaScript.`);
+// }
+
+// OUTPUT-
+// I love JavaScript.
+// I love JavaScript.
+// I love JavaScript.
+// I love JavaScript.
+// I love JavaScript.
+
+
+
+// 6. Display Numbers from 1 to 5
+
+// // program to display numbers from 1 to 5
+// const n = 5;
+
+// // looping from i = 1 to 5
+// // in each iteration, i is increased by 1
+// for (let i = 1; i <= n; i++) {
+//     console.log(i);     // printing the value of i
+// }
+
+// OUTPUT-
+// 1
+// 2
+// 3
+// 4
+// 5
+
+
+
+// 7.1 Display Sum of n Natural Numbers
+
+// let sum = 0;
+// const n = 100
+
+// // looping from i = 1 to n
+// // in each iteration, i is increased by 1
+// for (let i = 1; i <= n; i++) {
+//     sum += i;  // sum = sum + i
+// }
+
+// console.log('sum:', sum);   // 5050
+
+
+
+
+// 7.2 Display Sum of all a array values 
+
+// let a=[11,22,33,44,55,66];
+// let sum=0;
+// for(let i=0; i<=a.length-1; i++){
+// 	sum = sum + a[i];
+// 	console.log(sum);
+// } 
+  
+// Result-
+// 11
+// 33
+// 66
+// 110
+// 165
+// 231
+
+
+
+// 7.4  Display Sum of all array values in single digit. 
+
+// var numbersArray = [1,13,22,123,49]
+
+// var numbersArray = [1, 13, 22, 123, 49];
+// var sum = 0;
+// for (var i = 0; i < numbersArray.length; i++)
+// {  sum = sum + numbersArray[i];}
+// console.log("The sum is: " + sum);
+
+// Result - The sum is: 208
+
+
+
+
+// 8. Print the numbers from 12 to 24
+
+// for (var i = 12; i <= 24; i++) {
+//         console.log("Value of i is: " + i);
+// }
+
+
+
+// 8.1 Print the multiples of 2 from 12 to 24
+
+// for(let i=12; i<=24; i++){
+// 	if(i%2==0){
+// 	console.log(i)
+// 	}
+// }
+
+
+
+// 8.3 Print the ODD numbers from 7 to 31
+
+// for (var i = 7; i <= 31; i++) {
+//   if (i % 2 != 0) {
+//     console.log(i);
+//   }
+// }
+
+
+
+
+// 9. Print the EVEN numbers from 10 to -20
+
+// for (var i = 10; i >= -20; i--) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
+
+
+
+//10. Reverse A String-
+
+    // var a="Prince";
+    // var newstr= "";
+    // for(let i= a.length-1; i>=0; i--){
+    //     newstr+=a[i];
+    // }
+    // console.log(newstr);    // Result- ecnirP
+
+</script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------- -->
+
+
+<script>
+// MODERATE LEVEL OF DIFFICULTY
+
+//1. Remove Duplicate Element from Array-    
+
+    // var arr= [1,2,2,4,3,4,5];
+    // function remove(arr){
+    //     return arr.filter((item,index)=>
+    //     arr.indexOf(item)===index);
+    // }        
+    // console.log(remove(arr));    //Result- [ 1, 2, 4, 3, 5 ]
+
+
+//2. Palindrom - Check string is palindrom or not
+
+  // function check(){
+//     let a= "hello";    
+//     let b = a.length;
+//     for(let i=0; i<=b/2; i++){
+//         if(a[i]!==a[b-1-i]){
+//             alert("Not");
+//             return
+//         }
+//     } 
+//     alert("Palin")
+// }
+// console.log(check());
+
+        
+//3. Fibonacci series-
+
+            // let num=100;
+            // let x=0;
+            // let y=1;
+            // let fn=x+y;
+            // document.write(x);
+            // while(fn <num){
+            //     document.write(fn);
+            //     fn=x+y;
+            //     x=y;
+            //     y=fn;
+            // }
+
+            // Result- 01123581321345589 
+
+//4. Star Pattern-
+
+            // let n=5;
+            // let string=" ";
+            // for(let i=1; i<=n; i++){
+            //     for(let j=0; j<i; j++){
+            //         string +="*";
+            //     }
+            //     string+="\n";
+            // }
+            // console.log(string);    // Triangle Star Pattern.
+
+
+//5. Write a JS code to find the largest number in an array-
+
+// var arr = [2, 45, 3, 67, 34, 567, 34, 345, 123];  
+// var largest = arr[0];
+// for(var i=0;i<arr.length;i++){
+//    largest = arr[i]>largest ? arr[i]:largest; //Check largest number
+// }
+// console.log(largest) //567
+
+
+//6. Write a JS code to find product of two arrays-
+
+// function findProd(arr1, arr2) {
+//   var arrProd = arr1.length>arr2.length ? arr1 : arr2;
+//   for(var i=0; i < Math.min(arr1.length, arr2.length); i++){
+//      arrProd[i] = arr1[i] * arr2[i]; //Product of 2 array elements
+//   }
+//   return arrProd;
+// }
+// var arr1 = [3,45,23,78,34];
+// var arr2 = [4,2,34,4,12,1];
+
+// console.log(findProd(arr1,arr2)); //[12, 90, 782, 312, 408, 1]
+
+
+//
+</script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------- -->
+
+
+<script>
+
+// <!-- Topic - INSERTATION, DELETION AND MERGING IN ARRAY -->
+
+
+// 1. Insert Element in Array     
+// let a =[11,22,33,44,55,66];
+// let el= 70;
+// let pos=2;
+
+// for(let i=a.length-1; i>=0; i--){      // a.length= it starts from 5 ( reverse ) | i>=0 => i will run 5 to 0 index. 
+// 	// document.write(i)
+//  if(i>=pos){                          // i>=pos => i should be greater than pos which is 2 index.
+// 	a[i+1]= a[i];				        // a[i+1] => a will create a extra space at index 2. | a[i] => after creating a space numbers will move forward. 
+// 	 if(i==pos){		                // once the i is equal to pos then at that empty space el =70 will be placed.
+// 	  	 a[i]=el;
+// 	 }
+//  }  
+//  }  
+// document.write(a)
+</script>
+
+<!-- <h2>1. Insert Element in Array </h2>
+<input type="number" id="pos" placeholder="Enter Position" />
+<input type="number" id="el" placeholder="Enter Element" />
+<button onclick="insert()">Insert</button> -->
+
+<script>
+
+// function insert(){
+// let a =[11,22,33,44,55,66];
+// let el= document.getElementById('el').value;
+// let pos= document.getElementById('pos').value;
+
+// for(let i=a.length-1; i>=0; i--){        
+//  if(i>=pos){                              
+// 	a[i+1]= a[i];				         
+// 	 if(i==pos){		            	
+// 		 a[i]=el;
+// 	 }
+// }
+// }
+// document.write(a)
+
+// }
+</script>
+
+
+
+<script>
+
+// 2. Delete Element in Array     
+
+// let a= [11,22,33,44,55,66,77];
+// let pos= 3;
+// for(let i=pos; i<a.length; i++){
+// 	a[i]=a[i+1];           // [ 11, 22, 33, 55, 66, 77, undefined ] 
+// }
+// a.length= a.length-1;   // now fixing the length of the length 7 to 6 | a.length= 7  a.length-1 = 6. 
+// console.log(a);    
+
+</script>
+
+
+
+<script>
+
+// 3. Merge 2 Arrays     
+
+// let a =[11,22,33,44,55,66];
+// let b= [77,88,99,100];
+// let c=[];
+
+// for(let i=0; i<a.length; i++){
+// 	c[i]= a[i];      // Pushing the value of a value in c
+// }
+// // console.log(c);  [ 11, 22, 33, 44, 55, 66 ]
+
+// for (let i=0; i<b.length; i++){
+// 	c[a.length+i]=b[i]      // a.length+i gives index number of b => 6 7 8 9  | so it means we have to put our b index value in a.length+1
+// }
+// console.log(c)
+
+//Result- [ 11, 22, 33, 44, 55, 66, 77, 88, 99, 100 ]
+
+</script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------- -->
+
+
+<script>
+// <!-- Topic - ARRAY ELEMENT SEARCHING - LINEAR , BINARY & BINARY RECURSIVE -->
+
+//1. LINEAR SEARCH -->
+
+// let a =[11,22,33,44,55,66];
+// let find=44;
+// let b=undefined;
+
+// for(let i=0; i<=a.length; i++){
+//     if(a[i]== find){          // a[i] => a array value if equal to find(44)   
+//         b= i;                 // then put a index number in b    
+//         console.log(b);
+//     }
+// }
+
+// Result- 3       // 44 is at 3rd index value.
+
+</script>
+
+
+<script>
+
+//2. BINARY SEARCH - It is best if the array have values in larger quantity but array should be sorted like a=[1,2,3,4,5,6]-->
+//Note- It breaks the array from middle and check it all array values so it takes less time. 
+
+
+// let data =[5,9,13,17];
+// let find= 17;
+// let start= 0;               // array is always start from 0 index     
+// let end= data.length-1;     // data.length=> 4 -1 =3   because array counting starts from 0 index so can show + 1 index value
+// let pos= undefined;
+
+// while(start<=end){                       // start=> 0 & end is data.length => 3   if array "data" value are 0 then data.length-1  0-1=> -1 it will show error.
+// let mid= Math.floor((start + end)/2);     // start=> 0    end=> 3  0+3=> 3  /2  => 1.5  but math.floor remove decimal so mid will be 1 | we can also put (data.length/2) => 4 /2 => 2 (so it is wrong)
+// // console.log(mid);    // result- 1
+// // console.log(data[mid]);    // result- 9
+
+// if(data[mid] === find){             // if data[mid] => 9 is equal to  find(17) then do this 
+//     pos= mid;                       // pos=> empty     then put its index number position in "pos"
+//     break;
+// } else if (data[mid] < find){       // if data[mid] => 9 is smaller then find(17) then run below conditions
+//     start = mid +1;                 // start => start searching the find from mid +1 | Mid is already 1 then 1+1 =2 
+// } else{
+//     end = mid -1;
+// }
+// }
+
+// console.log(pos);
+//Result- 3
+
+
+</script>
+
+
+<script>
+
+// 3. RECURSION BINARY - In this function is call again and again until we find the position of array element.
+
+// let data = [10,15,23,27,34,89];
+// let start= 0;   
+// let end= data.length-1;
+// let find= 34;
+// let pos=undefined;
+
+// function recursiveBinary(data, start, end){
+// 	mid = Math.floor((start+end)/2);							//start=0 , end=6 -1 = 5 , 5/2 = 2.5 , Now Math.floor will convert it in 2 so 23 will be mid point
+// 		if(data[mid]===find){									//if data[mid]=> 23 is equal to find=>34 then  
+// 			pos=mid;														// 	put mid into pos=> undefined.
+// 			return true;
+// 		}else if(data[mid]<find){							// if data[mid]=> 23 is smaller than find =>34 then 
+// 			recursiveBinary(data, mid + 1, end)			// then again run recursiveBinary function but from now check after mid like- 24 25 26
+// 		}else{
+// 			recursiveBinary(data, start ,mid - 1, end) // else again run recursiveBinary function but from now check before mid like- 22 21 20
+// 		}
+// }
+
+// recursiveBinary(data, start, end);
+
+// console.log(pos);
+
+//Result- 4
+
+</script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------- -->
+
+
+<script>
+
+// <!-- Topic - SORTING IN ARRAY - BUBBLE SORT , SELECTION SORT , INSERTATION SORT  -->
+
+// 1. BUBBLE SORT - 
+// In this 2 for loop is run. 
+// Loop will run acc to elements in array. 
+// If it 7 elements then 7x7 = 49 Times loop will run to sort the array. 
+// In this we use if condition and we compare each elements with each other and swap it. 
+
+
+// IN ASCENDING ORDER-
+// let data = [100,58,15,29,27,37,89];
+
+// for(let i=0; i<data.length; i++){       // In bubble sort 1st loop will run 7 times coz of 7 elements in array
+// 	// console.log(data);						// This loop will run only seven times for first element.
+// 	for(let j=0; j<data.length; j++){			// 2nd loop will run on each elements 7 times.
+// 		// console.log(data);               // This console is used to check how elements going to sort.
+// 		if(data[j]>data[j+1]){				//if data[j]=>100 is bigger than the data[j+1]=> 58 then swipe it or store value in temp. 
+// 			let temp = data[j];				//then put data[j]=> 100 value in "temp" variable | Now temp is 100
+// 			data[j] = data[j+1];			// now store data[j+1]=> 58 in data[j]=> which is empty now (coz we stored its value in temp variable) 
+// 			data[j+1] = temp				// now store temp=> 100 in data[j+1] => which is empty now. or its value is store in data[j].
+// 		}
+// 	}
+// }
+// console.log(data);
+// //Result- [ 15, 27, 29, 37, 58, 89, 100 ]
+
+
+//Explationation of Sorting-
+//let a=[23,43,22,8];
+
+// In 1st loop i will run on each element of array and i run like 0 =>23 , 1 =>43 , 2 =>22 , 3 =>8
+// at start i=> 0 (23) will compare with i=> 1 (43)     Result => 43 , 23 , 22 , 8  
+// then i= 1 will compare with i= 2                     Result => 43, 22, 23, 8
+// then i = 2 will compare with i= 3                    Result=> 43, 22, 8, 23.         
+// Here loop is end but still array is not get sorted , that's why we use 2nd for loop for swaping elements perfectly.  
+
+
+//---------------------------------------------------------------------------------------------------------------------------//
+
+
+// IN DESCENDING ORDER OR REVERSE ARRAY-
+
+
+// //Result- [100, 89, 58, 37, 29, 27, 15]
+
+</script>
+
+
+
+<script>
+
+// 2. SELECTION SORT - I this 1st element will compare with each element if size is smaller then replace its position. 
+
+// let items = [63,58,15,29,27,37,89];
+
+// function selectionSort(data){								 	
+// 	let minId;									// minId= undefined;
+// 	for(let i=0; i<data.length; i++){			// i will run from 0 index to data.length
+// 		minId=i;								// minId => undefined will be fill with i(0=>63) 
+// 		for(let j=i+1; j<data.length; j++){			// Now loop will run j=i+1 => 58 so j will be 58 
+// 			if(data[j]<data[minId]){				// data[j] => 58 if smaller then data[minId] => 63 (At first minId is 63)  then
+// 				minId=j;							// then put in minId=>0 (63)  j=> 1 (58)  value. (Replacing the value)
+// 			}								// Inner loop will run 7 times coz it have 7 elements after that it will break and go at down side.  	
+// 		}																				 
+// 		let temp = data[minId];				// now store data[minId]=>15 in temp variable.  so now data[min] is empty now.
+// 		data[minId] = data[i];				// now fill in data[minId] =>15 with data[i]=> 0 (63) 	
+// 		data[i] = temp;						// now fill in data[i]=> 0 position (63) with 15 in first loop array will sort like 
+// 	}										// [15,58,63,29,27,37,89] => [15, 27, 63, 29, 58, 37, 89] => [15, 27, 29, 63, 58, 37, 89] => [15, 27, 29, 37, 58, 63, 89]								
+// }
+
+// selectionSort(items);
+// console.log(items);
+
+// //Result- [ 15, 27, 29, 37, 58, 63, 89 ]
+
+
+// IN DESCENDING ORDER OR REVERSE ARRAY-
+
+// let items = [63,58,15,29,27,37,89];
+
+// function selectionSort(data){								 	
+// 	let minId;									
+// 	for(let i=0; i<data.length; i++){			
+// 		minId=i;								
+// 		for(let j=i+1; j<data.length; j++){			 
+// 			if(data[j] > data[minId]){				// We just have to change < to >
+// 				minId=j;							
+// 			}								  	
+// 		}																				 
+// 		let temp = data[minId];				
+// 		data[minId] = data[i];					
+// 		data[i] = temp;						 
+// 	}																		
+// }
+
+// selectionSort(items);
+// console.log(items);
+
+// //Result- [89, 63, 58, 37, 29, 27, 15]
+
+</script>
+
+
+
+<script>
+
+// 3. INSERTATION SORT -
+
+// let items = [63, 58, 15, 29, 27, 37, 89];
+
+// function insertationSort(data) {
+// 	let i, current, j; 								// At first i, current and j variable will be empty
+// 	for (i = 1; i < data.length; i++) {				// i will be start from 1 index (58) and compare with 0 (63) 
+// 		current = data[i];							// now assigning value to current   data[i]=>58  now current will be 58
+// 		j = i - 1;                                  // Now assigning value to j    i(1)-1 => 63   now j will be 0 (63)                 
+// 		while (j >= 0 && data[j] > current) {       // now match 2 condition 1. j=>0 (63) always bigger or equal to 0 and not less the 0 index and 2. data[j]=>63 should be bigger than current=>58
+// 			data[j + 1] = data[j];                  // now put in data[j+1] => 58   data[j] => 63  now data[j+1] will be 63
+// 			j = j - 1;                              // j=> 0    j=>0 -1 = -1   now j will be -1  now it will again go to while loop then direct come down to replace the value or position        
+// 		}
+// 		data[j + 1] = current;                      // data[j+1]=> 63 will be replaced with current => 58
+// 	}
+// }
+// insertationSort(items);
+// document.write(items);
+
+//Result- [15,27,29,37,58,63,89]
+
+</script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------- -->
+
+
+<script>
+
+// <!-- Topic - LINKED LIST IN OBJECT - HOW TO CREATE IT IN JS, TRAVERSING , DELETION, INSERTATION  -->
+
+
+// 1. LINKED LIST BASICS AND INSERTATION OF NODE AT LAST -
+
+// class List{
+//         constructor(data){                  // data=> 200 received as parameter
+//             this.head ={                    // Creating object    
+//                 value: data,                // storing data=> 200 value in value 
+//                 next: null,
+//             };
+//             this.tail=this.head;         // so whenever we do any changes in tail so it will automaticlly reflect in head also. so this thing will work in below code also.
+//             this.size=1;                 // It is used to count the size of list.    
+//         }
+
+// NOW INSERT NODE AT LAST WITH appendNode function
+
+//         appendNode(nodeData){            // appendNode is a random name function used to add the another data into next.            
+//             let newNode={                // Creating object and then passing into next   
+//                 value: nodeData,
+//                 next: null
+//             };
+//             this.tail.next= newNode;     // here is adding newNode object in side of next       
+//             this.tail= newNode;          // so our tail become newNode object value: 700 and next will be null - So this our last tail    
+//             this.size+=1;           // It is used to count the size of list by adding +1 each time.
+//         }
+//     }
+    
+//     let list = new List(200);
+//     list.appendNode(300);
+//     list.appendNode(400);
+//     list.appendNode(500);
+//     list.appendNode(600);
+//     list.appendNode(700);
+//     console.log(list);
+    
+    
+    
+    //Example of shallow and deep copy.
+    // let x={name:"anil"};
+    // let y=x;                  // Y have the reference of x so that's why it is changed. so whenever we do any changes in y so it will automaticlly reflect in x also. so this thing will work in above code also.         
+    // y.name="Peter";
+    // console.log(x);   // Result -Peter   it is due to shallow of deep copy.
+    
+</script>
+    
+
+
+<script>
+
+// 2. LINKED LIST TRAVERSING-
+        
+// class List{
+//     constructor(data){                  // data=> 200 received as parameter
+//         this.head ={                    // Creating object    
+//             value: data,                // storing data=> 200 value in value 
+//             next: null,
+//         };
+//         this.tail=this.head;         // so whenever we do any changes in tail so it will automaticlly reflect in head also. so this thing will work in below code also.
+//         this.size=1;                 // It is used to count the size of list.    
+//         }
+//         appendNode(nodeData){            // appendNode is a random name function used to add the another data into next.            
+//             let newNode={                // Creating object and then passing into next   
+//                 value: nodeData,
+//                 next: null
+//             };
+//             this.tail.next= newNode;     // here is adding newNode object in side of next       
+//             this.tail= newNode;          // so our tail become newNode object value: 700 and next will be null - So this our last tail    
+//             this.size+=1;               // It is used to count the size of list by adding +1 each time.
+//         }
+        
+//         traversing(){               // First create a function for implementing logic
+//             let counter=0;              // counter starts from 0 node position which is 200 
+//             let currentNode= this.head;     // currentNode=> empty now putting this.head=> 1st node of head (200)
+//             while(counter<this.size){       // now counter=> 0 will run upto second last node a it will break. It means upto 600th node.
+//                 console.log(currentNode)            
+//                 currentNode=currentNode.next;      // we are putting in currentNode  => currentNode.next (300) | in 200th (first node) we are putting 300 value.
+//                 counter++;                         // running the condition 
+//             }
+//         }
+//     }
+        
+//     let list = new List(200);
+//     list.appendNode(300);
+//     list.appendNode(400);
+//     list.appendNode(500);
+//     list.appendNode(600);
+//     list.appendNode(700);
+//     list.traversing();               // calling function traversing which is inside of list.
+//     console.log(list);
+        
+// Result-
+        
+// Object { value: 200, next: {…} }
+// Object { value: 300, next: {…} }
+// Object { value: 400, next: {…} }
+// Object { value: 500, next: {…} }
+// Object { value: 600, next: {…} }
+// Object { value: 700, next: null }
+        
+</script>
+
+
+
+<script>
+// 3. LINKED LIST DELETITION OF NODE -
+    
+    // class List {
+    //     constructor(data) {                  // data=> 200 received as parameter
+    //         this.head = {                    // Creating object    
+    //             value: data,                // storing data=> 200 value in value 
+    //             next: null,                   
+    //         };
+    //         this.tail = this.head;         // so whenever we do any changes in tail so it will automaticlly reflect in head also. so this thing will work in below code also.
+    //         this.size = 1;                 // It is used to count the size of list.    
+    //     }
+    //     appendNode(nodeData) {            // appendNode is a random name function used to add the another data into next.            
+    //         let newNode = {                // Creating object and then passing into next   
+    //             value: nodeData,
+    //             next: null
+    //         };
+    //         this.tail.next = newNode;     // here is adding newNode object in side of next       
+    //         this.tail = newNode;          // so our tail become newNode object value: 700 and next will be null - So this our last tail    
+    //         this.size += 1;               // It is used to count the size of list by adding +1 each time.
+    //     }
+    
+    //     traversing() {               // First create a function for implementing logic
+    //         let counter = 0;              // counter starts from 0 node position which is 200 
+    //         let currentNode = this.head;     // currentNode=> empty now putting this.head=> 1st node of head (200)
+    //         while (counter < this.size) {       // now counter=> 0 will run upto second last node a it will break. It means upto 600th node.
+    //             // console.log(currentNode)
+    //             currentNode = currentNode.next;      // we are putting in currentNode  => currentNode.next (300) | in 200th (first node) we are putting 300 value.
+    //             counter++;                         // running the condition 
+    //         }
+    //     }
+    
+    //     deleteNode(index){
+    //         let counter=1;
+    //         let lead= this.head;    // lead where we used to put address of next node like lead of 3rd node will be 2nd node. but for now it will start from head.
+    //         if( index===1){         // index= > 3 if it is equal to 1 then
+    //             this.head=this.head.next;   // then replace or delete this.head=>200  with this.head.next=> 300  so this.head  will be 300
+    //         }else{                          // in else condition if our index is not 1 element then run while condition 
+    //             while(counter<index-1){     // counter=>1 should be less than index-1 => 3(index) -1 = 2
+    //                 lead=lead.next;         // lead=> head so now assign lead as lead.next=> 2 node. everytime when while loop will run then lead node will be change and increase.
+    //                 counter++;              // Increase loop 
+    //             }
+    //             let nextNode= lead.next.next;   // now put in nextNode=> empty   lead(head 200).next(300).next(400) => so 400 will be lead.next.next 
+    //             lead.next=nextNode;             // now replace lead.next=>200 with nextnode=> 400   there we skipped 300     
+    //             console.log(lead);
+    //         }    
+    //     }
+    // }
+    
+    // let list = new List(200);
+    // list.appendNode(300);
+    // list.appendNode(400);
+    // list.appendNode(500);
+    // list.appendNode(600);
+    // list.appendNode(700);
+    // list.traversing();               // calling function traversing which is inside of list.
+    // list.deleteNode(3);              // calling function deleteNode which is inside of list and argument 3rd node will be delete.
+    // console.log(list);
+    
+    // Result-
+    
+    // head: Object { value: 200, next: {…} }
+    // ​​
+    // next: Object { value: 300, next: {…} }
+    // ​​​
+    // next: Object { value: 500, next: {…} }
+    // ​​​​
+    // next: Object { value: 600, next: {…} }
+    // ​
+    // tail: Object { value: 700, next: null }
+    
+    
+</script>
+
+
+
+<script>
+// 4. LINKED LIST INSERTATION OF NODE IN MIDDLE-
+        
+        // class List {
+        // constructor(data) {                  // data=> 200 received as parameter
+        //     this.head = {                    // Creating object    
+        //         value: data,                // storing data=> 200 value in value 
+        //         next: null,
+        //     };
+        //     this.tail = this.head;         // so whenever we do any changes in tail so it will automaticlly reflect in head also. so this thing will work in below code also.
+        //     this.size = 1;                 // It is used to count the size of list.    
+        // }
+        // appendNode(nodeData) {            // appendNode is a random name function used to add the another data into next.            
+        //     let newNode = {                // Creating object and then passing into next   
+        //         value: nodeData,
+        //         next: null
+        //         };
+        //     this.tail.next = newNode;     // here is adding newNode object in side of next       
+        //     this.tail = newNode;          // so our tail become newNode object value: 700 and next will be null - So this our last tail    
+        //     this.size += 1;               // It is used to count the size of list by adding +1 each time.
+        //     }
+        // insetNode(index,value){
+        //     let counter=1;
+        //     let currentNode=this.head;
+        //     while(counter<index){
+        //         counter++;
+        //         currentNode= currentNode.next;
+        //     }
+        //     let nextNode= currentNode.next;
+        //     currentNode.next={
+        //         value: value,
+        //         next: nextNode
+        //     }
+        // }
+        // }
+        
+        // let list = new List(200);
+        // list.appendNode(300);
+        // list.appendNode(400);
+        // list.appendNode(500);
+        // list.appendNode(600);
+        // list.appendNode(700);
+        // list.insetNode(2, 1777);
+        // console.log(list);
+        
+        // Result-
+        // head: Object { value: 200, next: {…} }
+        // ​​
+        // next: Object { value: 300, next: {…} }
+        // ​​​
+        // next: Object { value: 1777, next: {…} }
+        // ​​​​
+        // next: Object { value: 400, next: {…} }
+        // ​​​​​
+        // next: Object { value: 500, next: {…} }
+        // ​​​​​​
+        // next: Object { value: 600, next: {…} }
+        // ​​​​​​​
+        // next: Object { value: 700, next: null }
+        // ​​​​​​​​
+        // next: null
+        // ​​​​​​​​
+        // value: 700
+        
+        
+</script>
+                
+
+</body>
+</html>

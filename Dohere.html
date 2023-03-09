@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Do It Here DSA</title>
+</head>
+
+<body>
+
+<script>
+// LINKED LIST DELETE-
+
+class List {
+constructor(data) {                  // data=> 200 received as parameter
+    this.head = {                    // Creating object    
+        value: data,                // storing data=> 200 value in value 
+        next: null,
+    };
+    this.tail = this.head;         // so whenever we do any changes in tail so it will automaticlly reflect in head also. so this thing will work in below code also.
+    this.size = 1;                 // It is used to count the size of list.    
+}
+appendNode(nodeData) {            // appendNode is a random name function used to add the another data into next.            
+    let newNode = {                // Creating object and then passing into next   
+        value: nodeData,
+        next: null
+        };
+    this.tail.next = newNode;     // here is adding newNode object in side of next       
+    this.tail = newNode;          // so our tail become newNode object value: 700 and next will be null - So this our last tail    
+    this.size += 1;               // It is used to count the size of list by adding +1 each time.
+    }
+insetNode(index,value){
+    let counter=1;
+    let currentNode=this.head;
+    while(counter<index){
+        counter++;
+        currentNode= currentNode.next;
+    }
+    let nextNode= currentNode.next;
+    currentNode.next={
+        value: value,
+        next: nextNode
+    }
+}
+}
+
+let list = new List(200);
+list.appendNode(300);
+list.appendNode(400);
+list.appendNode(500);
+list.appendNode(600);
+list.appendNode(700);
+list.insetNode(2, 1777);
+console.log(list);
+
+// Result-
+
+
+</script>
+
+    <!---------------------------------------------------------------------------------------------------------------------- -->
+
+
+</body>
+
+</html>

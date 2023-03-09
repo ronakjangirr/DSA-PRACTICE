@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Js- String Methods</title>
+
+	<style>
+	
+	
+	</style>
+	</head>
+	<body>
+	<h2>Important String Method Properties</h2>
+	<ul>
+		<li>length  - Property</li>
+		<li>toLowerCase()</li>
+		<li>toUpperCase()</li>
+		<li>includes()</li>
+		<li>startsWith()</li>
+		<li>endsWith()</li>
+		<li>search()</li>
+		<li>match()</li>
+		<li>indexOf()</li>
+		<li>replace()</li>
+		<li>trim()</li>
+		<li>charAt()</li>
+		<li>concat()</li>
+		<li>split()</li>
+		<li>repeat()</li>
+		<li>slice()</li>
+		<li>toString()</li>
+	</ul>	
+	
+	<script>
+//Task 1- Print the lenght of the given "STRING"
+		let a="Ronak Ashok Jangir";
+		let b=a.length;
+	
+		document.write(b);
+	// Ans- 18
+		
+		document.write("<br>")
+		
+//Task 2- Give String should be in LowerCase
+
+		let aa= "Ronak ASHOK JANGIR";
+		let bb=aa.toLowerCase();
+		
+		document.write(bb);
+	//Ans- ronak ashok jangir
+
+		document.write("<br>")
+//Task 3- Give String should be in UpperCase
+
+		let ab= "Ronak ASHOK JANGIR";
+		let ba=ab.toUpperCase();
+		
+		document.write(ba);
+	//Ans- RONAK ASHOK JANGIR	
+		
+		document.write("<br>")	
+
+//Task 4- Check In the Give String Html is include or not.
+	let c= "JavaScript Html CSS React";
+	let cc=c.includes("Html");
+	
+	document.write(cc);
+	//Ans- true
+	//Note- Includes return value in True or False and it is caseSensitive | Just Pass value in includes(" ")
+
+		document.write("<br>")	
+
+//Task 5- Check the give String is starts with "Java" keyword or not and End with "swhb" keyword or not.
+	let bc = "JavaScript Html CSS React";
+	let vc = bc.startsWith("Java");
+	let vv = bc.endsWith("swhb");
+	
+	document.write(vc);
+	document.write(vv);
+	//Ans- true
+	//Ans- false
+
+//Note- startsWith return value in True or False and it is caseSensitive. It checks the string does it starts with give value or not | Just Pass value in startsWith(" ") 
+	
+	document.write("<br>");	
+
+//Task 6- Search the Index in the given String "html" and "CSS" is present or not. 
+
+	let az = "JavaScript Html CSS React";
+	let zz = az.search("html");
+	let xx = az.search("CSS");
+	
+	document.write(zz);
+	document.write(xx);
+	//Ans- -1
+	//Ans- 16
+	
+//Note- Search is used for searching the index value and it is case sensetive | if the give character is not present in the string the it returns -1 (It means False)
+
+	document.write("<br>");	
+	
+//Task 7- Search the give keyword is present or not in the give String "html" and "CSS"
+	
+	let sz = "JavaScript Html CSS React";
+	let fz = sz.match("html");
+	let cx = sz.match("CSS");
+	
+	document.write(fz);
+	document.write(cx);
+	//Ans- null
+	//Ans- CSS
+	
+//Note- It returns the exact keyword if it is present in the given string or if the keyword is not present then it returns "null".	
+	
+	document.write("<br>");	
+
+//Task 8- Find from where the index value of the given keyword starts "React" & "Script"
+
+	let nn = "JavaScript Html CSS React";
+	let mm = nn.indexOf("React");
+	let dd = nn.indexOf("script");
+	
+	document.write(mm);
+	document.write(dd);
+	//Ans- 20
+	//Ans- -1   false
+
+	document.write("<br>");	
+	
+//Task 9- Replace JavaScript keyword with PHP in the given String.
+
+	let ja = "JavaScript Html CSS React";
+	let ng = ja.replace("JavaScript","PHP" );
+	
+	
+	document.write(ng);
+	//Ans-  PHP Html CSS React
+
+
+	document.write("<br>");		
+	
+//Task 10- Remove the black space from both the side of the give string.
+
+	let ro = "        JavaScript Html CSS React      ";
+	let dx = ro.trim(" ");
+	
+	document.write(dx);
+	//Ans- JavaScript Html CSS React
+
+//Note- trim removes the blank space only from both side of the string.
+
+	document.write("<br>");		
+		
+//Task 11- Find which Character is present on index number 9.
+
+	let kk = "JavaScript Html CSS React";
+	let jj = kk.charAt("9");
+	
+	document.write(jj);
+	//Ans- t
+
+//Note- we have to pass index number and it returns the Character which is present on that specific index number.
+
+	document.write("<br>");		
+		
+//Task 12- Concatnate 2 string with each other.
+
+	let ll = "JavaScript Html CSS React";
+	let we = "Angular Vue cheu"
+	let hu = ll.concat(we);
+	let jk = ll.concat(" ",we)
+	
+	document.write(hu);
+	document.write(jk);
+	//Ans- JavaScript Html CSS ReactAngular Vue cheu
+	//Ans- JavaScript Html CSS React Angular Vue cheu
+	
+//Note- It Concate 2 or more strings. 
+
+	document.write("<br>");		
+		
+//Task 13- Split the string from "a".
+
+	let gh = "JavaScript Html CSS React";
+	let df = gh.split("a")
+	
+	document.write(df);
+
+	//Ans- J,v,Script Html CSS Re,ct
+
+//Note- Splits converts the string in to array and remove the give value. 
+	
+	document.write("<br>");		
+		
+//Task 14- Split the string from "a".
+
+	let dg = "JavaScript Html CSS React";
+	let dk = dg.repeat(3)
+	
+	document.write(dk);
+
+	//Ans- JavaScript Html CSS ReactJavaScript Html CSS ReactJavaScript Html CSS React
+
+//Note- Splits converts the string in to array and remove the give value. 
+
+	document.write("<br>");		
+
+//Task 15- Give Characters between 5 and 14 index number.
+
+	let qw = "JavaScript Html CSS React";
+	let re = qw.slice(5, 14)
+	
+	document.write(re);
+
+	//Ans- cript Htm
+
+//Note- . 
+
+	document.write("<br>");		
+
+//Task 16- Convert number into string.
+
+	let af = 40;
+	let fa = af.toString();
+	
+	document.write(fa + 20);
+
+	//Ans- 4020 
+
+//Note- to string converts any data type into string. 
+		
+	</script>
+	</body>
+</html>
